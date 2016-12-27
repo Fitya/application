@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Sklad_new_edit" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/TV_kol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Количество" />
+
+            <EditText
+                android:id="@+id/ET_kol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number" >
+
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:id="@+id/TV_naimen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Наименование, характеристики" />
+
+            <EditText
+                android:id="@+id/ET_naimen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/TV_tip_obo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Тип устройства" />
+
+            <EditText
+                android:id="@+id/ET_tip_obo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/TV_mar_mod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Марка и модель" />
+
+            <EditText
+                android:id="@+id/ET_mar_mod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/B_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="OnClick_save"
+                android:text="Добавить" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

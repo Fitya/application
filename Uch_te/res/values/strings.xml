@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Uch_te</string>
+    <string name="button_ok">OK</string>
+    <string name="msg_intent_failed">К сожалению, запрошенное приложение не может быть запущенно. Возможно, содержимое штрих-кода повреждено.</string>
+    <string name="result_text">Найден текст</string>
+
+</resources>

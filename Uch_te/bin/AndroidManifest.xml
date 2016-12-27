@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.uch_te"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="10" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.uch_te.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.uch_te.spravochnik.SPR_glav" >
+        </activity>
+        <activity android:name="com.example.uch_te.spravochnik.SPR_new_edit" >
+        </activity>
+        <activity android:name="com.example.uch_te.spravochnik.SPR_vubor" >
+        </activity>
+        <activity android:name="com.example.uch_te.sklad.Reestr_glav" >
+        </activity>
+        <activity android:name="com.example.uch_te.sklad.Sklad_new_edit" >
+        </activity>
+        <activity android:name="com.example.uch_te.sklad.Sklad_glav" >
+        </activity>
+        <activity android:name="com.example.uch_te.sklad.Sklad_view" >
+        </activity>
+        <activity android:name="com.example.uch_te.sklad.Sklad_spisat" >
+        </activity>
+        <activity android:name="com.example.uch_te.Act" >
+        </activity>
+        <activity android:name="com.example.uch_te.Spisok" >
+        </activity>        
+    </application>
+
+</manifest>
